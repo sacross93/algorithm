@@ -20,6 +20,7 @@ public class functionDeveopment {
 				working +=speeds[i];
 				if(progresses[i]+working>=100){
 					middle[i]=temp;
+					System.out.println(middle[i]);
 					break;
 			}	
 			}
@@ -31,35 +32,23 @@ public class functionDeveopment {
 			if(a.isEmpty()){
 				temp=middle[i];
 				a.add(1);
-				System.out.println("첫번쨰");
-				System.out.println(a.peek());
-				System.out.println(middle[i]);
-				System.out.println("");
 			}
 			else{
 				if(temp<=middle[i]){
 					count=a.poll();
 					count++;
 					a.add(count);
-					System.out.println("두번쨰");
-					System.out.println(a.peek());
-					System.out.println(middle[i]);
-					System.out.println("");
 				}
 				else{
 					a.add(1);
 					temp=middle[i];
-					System.out.println("세번째");
-					System.out.println(a.peek());
-					System.out.println(middle[i]);
-					System.out.println("");
 				}
 			}
 		}
 		int[] result = new int[a.size()];
 		for(int i=0;i<result.length;i++){
 			result[i]=a.poll();
-			//System.out.println(result[i]);
+			System.out.println(result[i]);
 		}
 
 	}
