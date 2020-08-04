@@ -22,7 +22,6 @@ public class realFunctionDeveopment {
 				working +=speeds[i];
 				if(progresses[i]+working>=100){
 					middle[i]=temp;
-					//System.out.println(middle[i]);
 					break;
 			}	
 			}
